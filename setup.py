@@ -1,6 +1,8 @@
 #from distutils.core import setup
 from setuptools import setup
 from setuptools import Extension
+from setuptools import dist
+dist.Distribution().fetch_build_eggs(['cython'])
 from Cython.Build import cythonize
 
 from codecs import open
