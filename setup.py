@@ -2,7 +2,7 @@
 from setuptools import setup
 from setuptools import Extension
 from setuptools import dist
-dist.Distribution().fetch_build_eggs(['cython'])
+dist.Distribution().fetch_build_eggs(['Cython>=0.15.1', 'numpy>=1.10'])
 from Cython.Build import cythonize
 
 from codecs import open
